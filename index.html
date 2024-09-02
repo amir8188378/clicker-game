@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="balance-display">Balance: $<span id="balance">0</span></div>
+        <div class="icon-container">
+            <img id="coin-icon" src="YOUR_IMGUR_LINK" alt="Coin Icon" class="coin-icon">
+        </div>
+        <div class="profit-display">Profit per second: $<span id="profit-per-second">0</span></div>
+        <button id="boosts-button" class="boosts-button">Boosts</button>
+    </div>
+    <div id="boosts-modal" class="modal">
+        <div class="modal-content">
+            <h2>Boosts</h2>
+            <button id="per-click-1" class="boost-button">+1 per Click ($25)</button>
+            <button id="per-click-5" class="boost-button">+5 per Click ($100)</button>
+            <button id="per-click-10" class="boost-button">+10 per Click ($225)</button>
+            <button id="per-second-10" class="boost-button">+10 per Second ($200)</button>
+            <button id="per-second-25" class="boost-button">+25 per Second ($500)</button>
+            <button id="per-second-100" class="boost-button">+100 per Second ($2200)</button>
+            <button id="close-modal" class="close-modal">Close</button>
+        </div>
+    </div>
+    <div id="effects-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
